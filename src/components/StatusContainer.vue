@@ -16,7 +16,7 @@
 import connect from '../composables/connect/index';
 
 export default {
-  name: 'HelloWorld',
+  name: 'StatusContainer',
   props: {
     msg: String
   },

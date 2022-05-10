@@ -1,7 +1,7 @@
 import { providers } from "ethers";
 import connect from "./index";
 import { provider } from "../../walletConnect/provider";
-// import { stringify} from "flatted/esm";
+
 const connectWalletConnect = async () => {
   try {
     const { state } = connect();
@@ -34,10 +34,7 @@ const connectWalletConnect = async () => {
     provider.on("chainChanged", (chainId) => {
       console.log(chainId);
       state.chainId = chainId
-      //window.location.reload();
     });
-
-    //let chainId = await provider.request({ method: "eth_chainId" });
   } catch (error) {
     console.log(error);
   }

@@ -1,16 +1,16 @@
 <template>
-  <HelloWorld msg="Welcome to Your Vue.js Dapp"/>
+  <status-container msg="Welcome to Your Vue.js Dapp"/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import StatusContainer from './components/StatusContainer.vue'
 import connect from './composables/connect/index';
 import {onMounted} from "vue";
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    StatusContainer
   },
   setup: () => {
     const {state, autoConnect} = connect();
