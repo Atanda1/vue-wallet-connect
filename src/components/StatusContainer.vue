@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1>Welcome to Your Vue.js Dapp</h1>
     <div v-if="state.status">
        <button  @click="connectUserWallet" class="button">Connected</button>
        <h3>Address: {{state.address}}</h3>

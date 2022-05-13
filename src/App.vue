@@ -1,5 +1,5 @@
 <template>
-  <status-container msg="Welcome to Your Vue.js Dapp"/>
+  <status-container />
 </template>
 
 <script>
